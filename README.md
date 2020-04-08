@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 仿小米商城（React）
 
-## Available Scripts
+这是一次仿小米商城的React实战，项目的预览地址是 <a href='http://39.108.56.15:6028'>点击预览</a> ，项目的后台数据地址 <a href='http://39.108.56.15:6099'>点击查看</a> 。
 
-In the project directory, you can run:
+##### 项目环境
 
-### `npm start`
+`Node`	10.16.2
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##### 快速启动
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+git clone https://github.com/NeilYQ/react-xiaomiShop.git
+cd react-xiaomiShop
+// 启动项目
+$ npm start
+// 打包项目
+$ npm run build
+// build文件下的文件可部署到服务器
+```
 
-### `npm test`
+##### 项目完成的页面及功能：
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 首页：使用Swiper实现轮播，封装商品列表组件
 
-### `npm run build`
+2. 分类页：使用第三方懒加载组件
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. 详情页：添加购物车，从redux获取所需数据
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+4. 购物车：实现逆向解析地理位置，封装需求功能函数
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. 用户页
 
-### `npm run eject`
+   
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### 后台数据API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+在项目实现的过程中，简易的实现小米商城后台的数据获取，其中获取的数据均为静态数据。以下是后台的请求路由：
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 获取 banner 轮播图		`/api/banner`
+- 获取 gategory                 `/api/category`
+- 获取 conference            `/api/conference`
+- 获取手机产品                  `/api/goods/phones`
+- 获取手机产品详情          `/api/goods/phone/:id`
+- 获取电视产品                 `/api/goods/tvs`
+- 获取电视产品详情         `/api/goods/tv/:id`
+- 获取笔记本产品            `/api/goods/laptops`
+- 获取笔记本产品详情    `/api/goods/laptop/:id`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
