@@ -1,0 +1,25 @@
+.conference{
+  width: 100%;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.conference img{
+  width: 3.68rem;
+  margin-right: .04rem;
+  height: auto;
+}
+.conference .top{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: .16rem 0;
+}
+.conference .right{
+  display: flex;
+  flex-flow: column;
+}
+.conference .bottom img{
+  width: 100%;
+
+}

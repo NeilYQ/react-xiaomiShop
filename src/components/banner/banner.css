@@ -1,0 +1,17 @@
+.banner{
+  position: relative;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.banner-list{
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 300%;
+  padding: 0;
+}
+.banner .banner-item img{
+  width: 100vw;
+  height: auto;
+}

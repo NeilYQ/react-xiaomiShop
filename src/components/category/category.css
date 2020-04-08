@@ -1,0 +1,13 @@
+.category{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.category .nav{
+  width: 1.5rem;
+}
+.category .nav img{
+  width: 100%;
+}

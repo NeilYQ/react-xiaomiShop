@@ -1,0 +1,87 @@
+
+.goodDetail{
+  position: relative;
+}
+.goodDetail .back{
+  position: absolute;
+  top: .2rem;
+  left: .2rem;
+  width: .5rem;
+  height: .5rem;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.3);
+}
+.goodDetail .back img{
+  display: block;
+  width: .36rem;
+  height: auto;
+  margin: .05rem;
+}
+.goodDetail .img img{
+  width: 100vw;
+  height: auto;
+}
+.goodDetail .info{
+  padding: .32rem;
+}
+.goodDetail .info .title{
+  color: #3c3c3c;
+  font-size: .4rem;
+  line-height: 1.5em;
+}
+.goodDetail .info .desc{
+  color: rgba(0,0,0,.54);
+  font-size: .12rem;
+  line-height: 1.5em;
+}
+.goodDetail .info .price{
+  color: #ff6700;
+  font-size: .48rem;
+}
+.goodDetail .info .price .before{
+  margin: 0 .2rem;
+  color: #999;
+  font-size: .32rem;
+  text-decoration: line-through;
+}
+
+.goodDetail .count{
+  display: flex;
+  align-items: center;
+  margin: .3rem auto;
+  justify-content: space-between;
+  color: rgba(0,0,0,.68);
+  font-size: .32rem;  
+}
+.goodDetail .count .countBox span{
+  display: inline-block;
+  width: .6rem;
+  height: .6rem;
+  margin: 0 .04rem;
+  border-radius: .04rem;
+  background-color: #efefef;
+  color: #3c3c3c;
+  font-size: .3rem;
+  text-align: center;
+  line-height: .6rem;
+}
+
+.goodDetail .btn{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 1rem;
+}
+.goodDetail .btn .bt{
+  width: 50%;
+  color: #fff;
+  font-size: .32rem;
+  text-align: center;
+  line-height: .9rem;
+}
+.goodDetail .btn .addShopcartBtn{
+  background-color: #ff6700;
+}
+.goodDetail .btn .buyBtn{
+  background-color: #ff0036;
+}

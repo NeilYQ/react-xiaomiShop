@@ -1,0 +1,78 @@
+.goods{
+  width: 100vw;
+  margin: .1rem 0;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+.goods .top img{
+  width: 100vw;
+  height: auto;
+}
+.goods-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: .1rem 0;
+}
+.goods .goods-item{
+  width: 3.6rem;
+  font-size: .12rem;
+}
+.goods .goods-item img{
+  width: 100%;
+  height: auto;  
+}
+.goods .info{
+  padding: .2rem .27rem;
+  text-align: center;
+}
+.goods .info .title{
+  font-size: .28rem;
+  color: rgba(0,0,0,.87);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goods .info .desc{
+  margin-top: .06rem;
+  font-size: .22rem;
+  line-height: .3rem;
+  color: rgba(0,0,0,.54);
+}
+.goods .info .price{
+  position: relative;
+  display: inline-block;
+  font-size: .28rem;
+  color: #ea625b;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+.goods .info .old{
+  display: inline-block;
+  margin: 0 .1rem;
+  font-size: .22rem;
+  color: rgba(0,0,0,.54);
+  text-decoration: line-through;
+}
+.goods .buyBtn{
+  width: 2rem;
+  padding: .16rem 0;
+  margin: auto;
+  background: #ea625b;
+  border-radius: .05rem;
+  text-align: center;
+  color: #fff;
+  font-size: .24rem;
+  font-weight: 700;
+}
+.goods .moreAbout{
+  height: 1rem;
+  margin: 5px auto;
+  border-top: 2px solid #eaeaea;
+  background-color: #fff;
+  color: #3c3c3c;
+  font-size: .28rem;
+  text-align: center;
+  line-height: 1rem;
+}

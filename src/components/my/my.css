@@ -1,0 +1,158 @@
+.user .head{
+  background: url('./img/head.png') center 0 #f37d0f;
+  background-size: auto 100%;
+  padding: .32rem 0;
+}
+.user .head .user-info{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: .1rem 0;
+}
+.user .head .user-info .avator{
+  margin: 0 .16rem 0 .32rem;
+  width: .96rem;
+  height: .96rem;
+  border-radius: 100%;
+  border: 3px solid hsla(0,0%,100%,.4);
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.user .head .user-info .avator img{
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.user .head .user-info .control{
+  display: inherit;
+}
+.user .head .user-info .control span{
+  display: inline-block;
+  color: #fff;
+  font-size: .28rem;
+  line-height: .6rem;
+}
+.user .head span.symbol{
+  margin: 0 .1rem;
+}
+
+.user .order .box{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  color: rgba(0,0,0,.87);
+  line-height: .9rem;
+}
+.user .order .box .myOrder{
+  padding: 0 0 0 .32rem;
+  font-size: .3rem;
+}
+.user .order .box .allOrder{
+  padding-right: .4rem;
+  font-size: .2rem;
+}
+.user .order .o-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: .3rem auto;
+  color: #666;
+  font-size: .26rem;
+  text-align: center;
+  line-height: .32rem;
+}
+.user .order .o-list .item img{
+  width: .8rem;
+  height: auto;
+}
+
+.user .nav-list{
+  background-color: #f5f5f5;
+}
+
+.user .to::after{
+  content: "";
+  display: inline-block;
+  width: .15rem;
+  height: .15rem;
+  border: 1px solid #999;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotateZ(-45deg);
+}
+.user .nav-list{
+  padding: .2rem 0;
+  background-color: #f5f5f5;
+}
+.user .nav-item{
+  position: relative;
+  height: 1rem;
+  padding-left: 1.12rem;
+  padding-right: .56rem;
+  background-color: #fff;
+  color: rgba(0,0,0,.87);
+  font-size: .3rem;
+  line-height: 1rem;
+}
+.user .nav-item a{
+  display: block;
+}
+.user .nav-item::before,
+.user .nav-item::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: .5rem;
+  height: .5rem;
+  margin: auto;
+}
+.user .nav-item::after{
+  right: .4rem;
+  display: block;
+  width: .15rem;
+  height: .15rem;
+  border: 1px solid #999;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotateZ(-45deg);
+}
+.user .nav-item.n1::before{
+  background: url('./img/n1.png') no-repeat;
+}
+.user .nav-item.n2::before{
+  background: url('./img/n2.png') no-repeat;
+}
+.user .nav-item.n3::before{
+  background: url('./img/n3.png') no-repeat;
+}
+.user .nav-item.n4::before{
+  background: url('./img/n4.png') no-repeat;
+}
+.user .nav-item.n5::before{
+  background: url('./img/n5.png') no-repeat;
+}
+.user .nav-item.n6::before{
+  background: url('./img/n6.png') no-repeat;
+}
+.user .nav-item.setting::before{
+  background: url('./img/setting.png') no-repeat;
+}
+.user .nav-list .nav-item::before{
+  left: .36rem;
+  width: .4rem;
+  height: .4rem;
+  background-size: cover;
+}
+.user .nav-list .nav-item:nth-child(2n+1){
+  border-bottom: 1px solid #ebebeb;
+}
+.user .nav-list .nav-item:nth-child(2n){
+  margin-bottom: .2rem;
+}
